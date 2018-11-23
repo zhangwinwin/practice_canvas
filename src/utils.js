@@ -57,7 +57,39 @@ export function captureTouch(element){
     y -= offsetTop
 
     touch.x = x
-    touch.y =y
+    touch.y = y
   }, false)
   return touch
+}
+
+/**
+ * 训练1
+ */
+//可供旋转的对象
+export function Arrow(x, y){
+  this.x = x
+  this.y = y
+  this.color = '#ff0'
+  this.rotation = 0
+}
+
+Arrow.prototype.draw = function (ctx) {
+  ctx.save()
+  ctx.translate(this.x, this.y)
+  ctx.rotate(this.rotation)
+  ctx.lineWidth = 2
+  ctx.fillStyle = this.color
+  ctx.beginPath()
+  ctx.moveTo(-50, -25)
+  ctx.lineTo(0, -25)
+  ctx.lineTo(0, -50)
+  ctx.lineTo(50, 0)
+  ctx.lineTo(0, 50)
+  ctx.lineTo(0, 25)
+  ctx.lineTo(-50, 25)
+  ctx.lineTo(-50, -25)
+  ctx.closePath()
+  ctx.fill()
+  ctx.stroke()
+  ctx.restore()
 }
