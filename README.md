@@ -71,12 +71,34 @@ practice23: 创建多条曲线
 
 #### 第三章
 practice31: 旋转一个物体。
+
 practice32: 鼠标追随者： 加上速度向量
+
 practice33: 双轴加速度
+
 practice34: 宇宙飞船: 在drawFrame函数中，把vr添加到飞船当前旋转角度，从而改变飞船的方向。当释放方向键后，vr又重置为0。声明一个thrust变量用于追踪飞                      船在任意时刻的推力大小。
 
 #### 第四章
 practice41: 离开边界，移除物体
+
 practice42: 离开边界，重置物体
+
 practice43: 离开边界，屏幕环绕
+
 practice44: 离开边界，反弹
+
+#### 第五章
+practice51: 拖拽对象
+
+practice52: 结合运动代码的拖拽
+
+practice53: 结合运动代码的拖拽和投掷
+
+#### 第六章
+practice61: 缓动
+
+practice62: 弹动
+
+practice62：链式弹动
+
+practice64：多个目标点的弹动

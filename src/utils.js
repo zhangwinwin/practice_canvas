@@ -125,6 +125,15 @@ Ball.prototype.draw = function (ctx) {
   ctx.restore()
 }
 
+Ball.prototype.getBounds = function(){
+  return {
+    x: this.x - this.radius,
+    y: this.y - this.radius,
+    width: this.radius * 2,
+    height: this.radius * 2
+  }
+}
+
 export function colorToRGB(color, alpha){
   if(typeof color === 'string' && color[0] === '#'){
     color = window.parentInt(color.slice(1), 16)
@@ -189,4 +198,8 @@ Ship.prototype.draw = function(ctx){
     ctx.stroke()
   }
   ctx.restore()
+}
+
+export function containsPoint(rect, x, y) {
+  return !(x < rect.x || x > rect.x + rect.width || y < rect.y || y > rect.y + rect.height)
 }
