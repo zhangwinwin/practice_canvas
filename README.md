@@ -102,3 +102,13 @@ practice62: 弹动
 practice62：链式弹动
 
 practice64：多个目标点的弹动
+
+practice65: 目标偏移量
+
+#### 第七章
+practice71: 碰撞
+practice72: 多物体碰撞
+
+#### 第八章
+practice81: 旋转单个物体
+practice82: 旋转多个物体

@@ -203,3 +203,7 @@ Ship.prototype.draw = function(ctx){
 export function containsPoint(rect, x, y) {
   return !(x < rect.x || x > rect.x + rect.width || y < rect.y || y > rect.y + rect.height)
 }
+
+export function intersects(rectA, rectB){
+  return !(rectA.x + rectA.width < rectB.x || rectB.x + rectB.width < rectA.x || rectA.y + rectA.height < rectB.y || rectB.y + rectB.height < rectA.y)
+}
