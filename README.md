@@ -112,3 +112,8 @@ practice72: 多物体碰撞
 #### 第八章
 practice81: 旋转单个物体
 practice82: 旋转多个物体
+practice83: 斜面反弹
+practice84: 多个斜面反弹
+
+#### 第九章
+practice91: 单轴上的动量守恒
